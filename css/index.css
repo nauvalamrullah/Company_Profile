@@ -1,0 +1,171 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+/* variabel */
+:root{
+  --primary-color: #ffffff;
+  --dark-color: #000000;
+  --silver-color: #1f1f1f;
+  --blue-color: #70ffff;
+
+  --h1-font-size: 40px;
+  --h2-font-size: 32px;
+  --h3-font-size: 24px;
+  --h5-font-size: 12px;
+  --small-font-size: 15px;
+}
+/* RESET CSS */
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+.text-blue{
+  color:var(--blue-color)
+}
+
+/* GLOBAL CSS */
+.bg{
+  background-color: #000000;
+  color: #ffffff;
+}
+section {
+  padding: 90px 0;
+}
+
+section.section-title{
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header-section .header-title{
+  padding: 0px
+}
+.header-section .header-img{
+  width: 70%;
+  padding-left: 50px;
+}
+.judul{
+  padding-top: 70px;
+  padding-left: 30px;
+}
+img{
+  max-width: 100%;
+}
+
+.about-section .subtitle{
+  position: center;
+}
+.about-section .about-foto{
+  width: 75%;
+}
+/* navbar */
+
+/* card */
+.card{
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: var(--blue-color)0px 0px 1px 1px, var(--blue-color)0px 0px 1px 1px;
+}
+.col{
+  margin-top: 20px;
+}
+
+
+
+.footer{
+  width: 100%;
+  background-color: var(--silver-color);
+  padding: 10px 90px 10px;
+}
+.socialmedia{
+  display: flex;
+  justify-content: center;
+}
+.socialmedia a{
+  text-decoration: none;
+  padding: 5px;
+  background-color: var(--silver-color);
+  margin: 7px;
+  border-radius: 100%;
+}
+.socialmedia a i{
+  font-size: 2em;
+  color:var(--primary-color);
+  opacity: 0.9;
+  
+}
+
+.socialmedia a i:hover{
+  color: var(--blue-color);
+  transition: 0.5s;
+}
+
+.designed{
+  color: #000000;
+}
+.navFooter{
+  margin: 2px 0;
+}
+.navFooter ul{
+  display: flex;
+  justify-content: center;
+}
+.navFooter ul li{
+  display: flex;
+  justify-content: center;
+}
+.navFooter ul li a{
+  color: var(--blue-color);
+  text-decoration: none;
+  margin: 15px;
+}
+.footerBottom{
+  background-color: var(--blue-color);
+  color: var(--dark-color);
+  padding: 7px;
+  text-align: center;
+}
+
+/* form */
+input[type=text], textarea {
+  display:flex;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 3px;
+  position: relative;
+  height: 40px;
+  border: #ffffff;
+}
+
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: var(--dark-color);
+  border: none;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  margin: 2px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color:var(--blue-color);
+  color: #000000;
+}
