@@ -15,8 +15,8 @@
 <!-- navbar -->
 
       <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-        <nav class="navbar fixed-top bg-body-tertiary">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+       
+          <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand fw-bold" href="#"><img src="img/MNA.png" style="width: 40px;" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,16 +24,16 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link fw-semibold" aria-current="page" href="#header">Home</a>
-                  <a class="nav-link fw-semibold" href="#about">About</a>
-                  <a class="nav-link fw-semibold" href="#project">Project</a>
-                  <a class="nav-link fw-semibold" href="#contact">Contact</a>
+                  <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#project">Project</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </div>
               </div>
             </div>
           </nav>
-        </nav>
-</nav>
+       
+    </nav>
 <!-- Header -->
 
     <section class="header-section" id="header">
@@ -45,9 +45,9 @@
               <h1 class="text-blue header-title text-uppercase fw-bold mb-4">Muhammad <br>Nauval Amrullah</h1>
               <p class="fw-semibold text-blue mb-2">Aku Adalah seorang</p>
                 <p>Junior Web Developer <img src="img/panah.png" alt="">
-                  <br>Mahasiswa <img src="img/panah.png" alt="">
-                  <br>Freelance <img src="img/panah.png" alt="">
-                  <br>Editor <img src="img/panah.png" alt="">
+                  <br>Mahasiswa <img src="img/panah.png" alt="#">
+                  <br>Freelance <img src="img/panah.png" alt="#">
+                  <br>Editor <img src="img/panah.png" alt="#">
                 </p>
               </p>
             </div>
@@ -61,7 +61,7 @@
 
 <!-- about -->
 
-  <section class="about-section" id="about">
+    <section class="about-section" id="about">
     <div class="container">
     <div class="row align-items-center">
       <div class="col-md-8">
@@ -73,7 +73,7 @@
     <div class="col-md-4 text-center">
       <p><img src="img/vektorcode.png" class="about-foto"alt=""></p>     
       </div>
-    </div>
+  </div>
     
     <div class="row align-items-center mt-5">
       <div class="col-md-6 text-center">
@@ -86,7 +86,7 @@
       </div>
     </div>
     </div>
-  </section>
+    </section>
 
 <!-- Project/album -->
     <section class="album-section" id="project">
@@ -103,7 +103,7 @@
                 <div class="card" style="background-color: rgba(0, 0, 0, 0); color:aliceblue">
                   <img src="img/myweb.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title fw-bold">Projek Web Portofolio</h5>
+                    <h5 class="card-title fw-semibold" style="color:var(--blue-color);">Projek Web Portofolio</h5>
                     <p>ini adalah projek web pertama yang saya publish, setelah berkali kali saya belajar mengenai HTML, CSS dan JavaScript. Saya membuat web ini ketika saya magang dan mendapat projek dari PT. Madina Mentari Teknology Surabaya pada waktu liburan semester. mulai dari sini saya memiliki keinginan untuk memperdalam ilmu tentang web develoop. salah satunya Frontend Developer</p>
                    
                     <a href="#" class="btn btn-primary">Detail</a>
@@ -111,10 +111,10 @@
                 </div>
               </div>
               <div class="col">
-                <div class="card" style=" background-color: rgba(0, 0, 0, 0); color: antiquewhite;">
+                <div class="card" style=" background-color: rgba(0, 0, 0, 0); color:var(--blue-color)">
                   <img src="img/kajian.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title fw-bold">Desain Pamflet Kajian Ramadhan</h5>
+                    <h5 class="card-title fw-semibold">Desain Pamflet Kajian Ramadhan</h5>
                     <p>Disalah satu organisasi kampus, aya memiliki tugas sebagai humas di organisasi tersebut, maka dari itu saya seringkali mendapat tugas untuk mendesain.</p>
                     <a href="#" class="btn btn-primary">Detail</a>
                   </div>
@@ -124,14 +124,14 @@
                 <div class="card" style="background-color: rgba(0, 0, 0, 0); color: antiquewhite;">
                   <img src="img/studyUAD.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title fw-bold">Desain pamflet Study Banding</h5>
+                    <h5 class="card-title fw-semibold">Desain pamflet Study Banding</h5>
                     
                     <a href="#" class="btn btn-primary">Detail</a>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card" style="background-color: rgba(0, 0, 0, 0); color:aliceblue;">
+                <div class="card" style="background-color: rgba(0, 0, 0, 0); color:var(--blue-color)">
                   <img src="img/pakubumi.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Gold Medal Paku Bumi International Open XI</h5>
@@ -173,31 +173,32 @@
     <h2 class="fw-semibold text-blue mb-4">Contact Us</h2>
 
 <!-- form komentar -->
-    <form action="/action_page.php" autocomplete="on">
-      <div class="container">
+<form action="proses_formulir.php" autocomplete="on" method="post">
+    <div class="container">
         <div class="row">
-          <div class="col-75">
-            <input type="text" id="name" name="firstname" placeholder="Your name">
-          </div>
+            <div class="col-75">
+                <input type="text" id="firstname" name="firstname" placeholder="Your name" required>
+            </div>
         </div>
         <div class="row">
-          <div class="col-75">
-            <input type="text" id="email" name="email" placeholder="Email">
-          </div>
+            <div class="col-75">
+                <input type="text" id="email" name="email" placeholder="Email" required>
+            </div>
         </div>
         <div class="row">
-          <div class="col-75">
-            <textarea id="subject" name="subject" placeholder="Tulis sesuatu" style="height:50px"></textarea>
-          </div>
+            <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Tulis sesuatu" style="height:50px" required></textarea>
+            </div>
         </div>
         <br>
         <div class="row">
-          <div class="col-75">
-          <input type="submit" class="fw-semibold" value="Kirim">
-          </div>
+            <div class="col-75">
+                <input type="submit" class="fw-semibold" value="Kirim">
+            </div>
         </div>
-      </div>
+    </div>
 </form>
+
 <p class="fw-semibold mt-3 text-center" >Atau Hubungi saya melalui</p>
 
 <!-- sosmed -->
@@ -228,7 +229,6 @@
 
 <!-- End footer -->
 </div>
-<!-- javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>

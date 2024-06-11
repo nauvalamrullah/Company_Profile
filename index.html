@@ -15,8 +15,8 @@
 <!-- navbar -->
 
       <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-        <nav class="navbar fixed-top bg-body-tertiary">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+       
+          <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand fw-bold" href="#"><img src="img/MNA.png" style="width: 40px;" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,8 +32,8 @@
               </div>
             </div>
           </nav>
-        </nav>
-</nav>
+       
+    </nav>
 <!-- Header -->
 
     <section class="header-section" id="header">
@@ -45,9 +45,9 @@
               <h1 class="text-blue header-title text-uppercase fw-bold mb-4">Muhammad <br>Nauval Amrullah</h1>
               <p class="fw-semibold text-blue mb-2">Aku Adalah seorang</p>
                 <p>Junior Web Developer <img src="img/panah.png" alt="">
-                  <br>Mahasiswa <img src="img/panah.png" alt="">
-                  <br>Freelance <img src="img/panah.png" alt="">
-                  <br>Editor <img src="img/panah.png" alt="">
+                  <br>Mahasiswa <img src="img/panah.png" alt="#">
+                  <br>Freelance <img src="img/panah.png" alt="#">
+                  <br>Editor <img src="img/panah.png" alt="#">
                 </p>
               </p>
             </div>
@@ -173,31 +173,32 @@
     <h2 class="fw-semibold text-blue mb-4">Contact Us</h2>
 
 <!-- form komentar -->
-    <form action="/action_page.php" autocomplete="on">
-      <div class="container">
-        <div class="row">
+<form action="proses_formulir.php" autocomplete="on" method="post">
+  <div class="container">
+      <div class="row">
           <div class="col-75">
-            <input type="text" id="name" name="firstname" placeholder="Your name">
+              <input type="text" id="firstname" name="firstname" placeholder="Your name" required>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-75">
-            <input type="text" id="email" name="email" placeholder="Email">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-75">
-            <textarea id="subject" name="subject" placeholder="Tulis sesuatu" style="height:50px"></textarea>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-75">
-          <input type="submit" class="fw-semibold" value="Kirim">
-          </div>
-        </div>
       </div>
+      <div class="row">
+          <div class="col-75">
+              <input type="text" id="email" name="email" placeholder="Email" required>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Tulis sesuatu" required></textarea>
+          </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-75">
+              <input type="submit" class="fw-semibold" value="Kirim">
+          </div>
+      </div>
+  </div>
 </form>
+
 <p class="fw-semibold mt-3 text-center" >Atau Hubungi saya melalui</p>
 
 <!-- sosmed -->

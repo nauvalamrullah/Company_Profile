@@ -70,7 +70,15 @@ img{
   width: 75%;
 }
 /* navbar */
-
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
 /* card */
 .card{
   width: 100%;
@@ -149,8 +157,6 @@ input[type=text], textarea {
   height: 40px;
   border: #ffffff;
 }
-
-
 
 input[type=submit] {
   width: 100%;
