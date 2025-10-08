@@ -51,10 +51,29 @@ section.section-title{
 .header-section .header-title{
   padding: 0px
 }
-.header-section .header-img{
-  width: 70%;
-  padding-left: 50px;
+.header-section {
+  color: #fff;
+  padding: 120px 0;
 }
+
+/* Foto Profil Header */
+.header-section .header-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%; /* lingkaran */
+  border: 5px solid #fff; /* border putih elegan */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: auto;
+  display: block;
+}
+
+.header-section .header-img:hover {
+  transform: scale(1.05); /* zoom halus */
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
 .judul{
   padding-top: 70px;
   padding-left: 30px;
@@ -79,13 +98,92 @@ img{
   flex-grow: 1;
   align-items: center;
 }
-/* card */
-.card{
-  width: 100%;
-  margin-top: 20px;
-  border-radius: 5px;
-  box-shadow: var(--blue-color)0px 0px 1px 1px, var(--blue-color)0px 0px 1px 1px;
+/* ==== PERUBAHAN KHUSUS BAGIAN CARD & BACKGROUND ==== */
+
+/* Background section album */
+.album-section {
+  background: radial-gradient(circle at top left, #001f2f, #000000 70%);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Efek gradasi halus pada container card */
+.album-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(0, 255, 255, 0.15), rgba(0, 0, 0, 0.6));
+  z-index: 0;
+}
+
+.album-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* CARD STYLE */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(112, 255, 255, 0.2);
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+  transition: all 0.4s ease;
+}
+
+/* Efek hover */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  border-color: rgba(112, 255, 255, 0.5);
+  box-shadow: 0 12px 30px rgba(112, 255, 255, 0.3);
+}
+
+/* Gambar card */
+.card img {
+  border-radius: 14px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Judul & teks card */
+.card-body {
+  color: #e0f7fa;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(112, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 0 0 16px 16px;
+}
+
+.card-title {
+  color: var(--blue-color);
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(112, 255, 255, 0.4);
+}
+
+.card-text {
+  color: #ffffff;
+}
+
+/* Tombol detail */
+.card .btn-primary {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.card .btn-primary:hover {
+  background: linear-gradient(45deg, #70ffff, #00bfff);
+  color: #000;
+  box-shadow: 0 0 15px rgba(112, 255, 255, 0.6);
+}
+
 .col{
   margin-top: 20px;
 }
@@ -115,10 +213,11 @@ img{
   
 }
 
-.socialmedia a i:hover{
-  color: var(--blue-color);
-  transition: 0.5s;
+.socialmedia a i:hover {
+  color: #70ffff;
+  text-shadow: 0px 0px 15px #70ffff;
 }
+
 
 .designed{
   color: #000000;
