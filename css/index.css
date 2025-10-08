@@ -135,7 +135,7 @@ img{
 
 /* Efek hover */
 .card:hover {
-  transform: translateY(-10px) scale(1.03);
+  transform: translateY(-5px) scale(1.00);
   border-color: rgba(112, 255, 255, 0.5);
   box-shadow: 0 12px 30px rgba(112, 255, 255, 0.3);
 }
