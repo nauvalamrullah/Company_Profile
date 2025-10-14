@@ -58,21 +58,24 @@ section.section-title{
 
 /* Foto Profil Header */
 .header-section .header-img {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 50%; /* lingkaran */
-  border: 5px solid #fff; /* border putih elegan */
+  width: 260px;
+  height: 260px;
+  object-fit: cover; /* tetap isi penuh tanpa ruang hitam */
+  object-position: 50% 30%; /* geser sedikit agar wajah lebih pas */
+  border-radius: 50%;
+  border: 5px solid #fff;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: auto;
   display: block;
+  transform: scale(0.9); /* efek zoom out lembut */
 }
 
 .header-section .header-img:hover {
-  transform: scale(1.05); /* zoom halus */
+  transform: scale(0.95); /* efek hover halus */
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
+
 
 .judul{
   padding-top: 70px;
@@ -273,4 +276,119 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color:var(--blue-color);
   color: #000000;
+}
+
+/* --- Modern GitHub-like Hero Section --- */
+.header-section {
+  background: radial-gradient(circle at top left, #001f2f, #000000 70%);
+  color: #fff;
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(0, 255, 255, 0.08), rgba(0, 0, 0, 0.6));
+  z-index: 0;
+}
+
+.header-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Card di sisi kanan */
+.profile-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(112, 255, 255, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(112, 255, 255, 0.1);
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(112, 255, 255, 0.25);
+}
+
+/* Tombol GitHub style */
+.btn {
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn-outline-light {
+  border: 1px solid #70ffff;
+  color: #70ffff;
+  background: transparent;
+}
+
+.btn-outline-light:hover {
+  background: #70ffff;
+  color: #000;
+  box-shadow: 0 0 10px rgba(112, 255, 255, 0.6);
+}
+
+
+/* ===== BAGIAN LOGO / TECH STACK ===== */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.tech-stack img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(112, 255, 255, 0.3));
+}
+
+.tech-stack img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 12px rgba(112, 255, 255, 0.8));
+}
+
+/* Responsive agar tetap rapi di layar kecil */
+@media (max-width: 768px) {
+  .tech-stack {
+    justify-content: center;
+  }
+}
+
+.tools {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.tool-logo {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.3));
+}
+
+.tool-logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.6));
+}
+
+/* Buat versi terang untuk logo yang aslinya gelap */
+.tool-logo.light {
+  filter: brightness(3) drop-shadow(0 0 5px rgba(0, 255, 255, 0.5));
+}
+.tech-stack img.flask-fix {
+  filter: invert(1) brightness(2) drop-shadow(0 0 8px rgba(0, 255, 255, 0.6));
+}
+.tech-stack img.github-fix {
+  filter: invert(1) brightness(2) drop-shadow(0 0 8px rgba(0, 255, 255, 0.6));
 }
