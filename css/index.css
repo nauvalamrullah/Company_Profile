@@ -56,6 +56,16 @@ section.section-title{
   padding: 120px 0;
 }
 
+a.btn-download {
+  background: linear-gradient(100deg, #0d6efd, #17b0b0);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+a.btn-download:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
 /* Foto Profil Header */
 .header-section .header-img {
   width: 260px;
