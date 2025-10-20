@@ -144,6 +144,7 @@ img{
   border-radius: 18px;
   box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
   transition: all 0.4s ease;
+  text-align: justify;
 }
 
 /* Efek hover */
@@ -181,6 +182,7 @@ img{
 
 .card-text {
   color: #ffffff;
+  text-align: justify;
 }
 
 /* Tombol detail */
@@ -436,4 +438,45 @@ input[type=submit]:hover {
     justify-content: center;
     margin-bottom: 10px;
   }
+}
+
+
+/* === Perapian Bagian About Me === */
+.about-section p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* Judul bagian visi & misi */
+.about-section h5 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* List misi tanpa tanda minus */
+.about-section .misi-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-section .misi-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+/* Bullet elegan berbentuk lingkaran bercahaya */
+.about-section .misi-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, var(--primary-color) 40%, rgba(0,0,0,0) 40%);
+  border-radius: 50%;
 }
