@@ -402,3 +402,38 @@ input[type=submit]:hover {
 .tech-stack img.github-fix {
   filter: invert(1) brightness(2) drop-shadow(0 0 8px rgba(0, 255, 255, 0.6));
 }
+
+
+/* ==== Responsive fix tampilan header di mode HP ==== */
+@media (max-width: 768px) {
+
+  /* Naikkan posisi teks agar tidak terlalu ke bawah */
+  .header-section {
+    padding-top: 80px; /* semula 120px */
+    padding-bottom: 60px; /* kurangi sedikit padding bawah */
+  }
+
+  .judul {
+    padding-top: 30px; /* semula 70px */
+    text-align: center;
+  }
+
+  /* Pusatkan tombol dan beri jarak dari foto */
+  a.btn-download {
+    display: block;
+    margin: 0 auto 40px auto; /* beri jarak 40px di bawah tombol */
+  }
+
+  /* Beri jarak antara tombol dan foto */
+  .header-section .header-img {
+    margin-top: 15px;
+    width: 220px;
+    height: 220px;
+  }
+
+  /* Pusatkan logo teknologi agar tetap rapi */
+  .tech-stack {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
